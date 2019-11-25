@@ -51,9 +51,7 @@ set(LIBXML2_SOURCES
         platform_external_libxml2/HTMLtree.c
         )
 
-# include_directories(platform_external_libxml2/include)
-
-# include_directories(platform_external_libxml2)
+configure_file(xmlversion.h ${CMAKE_CURRENT_SOURCE_DIR}/platform_external_libxml2/include/libxml/xmlversion.h COPYONLY)
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
