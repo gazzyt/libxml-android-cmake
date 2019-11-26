@@ -59,7 +59,7 @@ configure_file(xmlversion.h ${CMAKE_CURRENT_SOURCE_DIR}/platform_external_libxml
 # Gradle automatically packages shared libraries with your APK.
 
 add_library( # Sets the name of the library.
-        xml2
+        libxml2
 
         # Sets the library as a shared library.
         STATIC
@@ -67,8 +67,8 @@ add_library( # Sets the name of the library.
         # Provides a relative path to your source file(s).
         ${LIBXML2_SOURCES})
 
-target_compile_definitions(xml2 PUBLIC STATIC_LIBXML LIBXML_THREAD_ENABLED=1)
+target_compile_definitions(libxml2 PUBLIC STATIC_LIBXML LIBXML_THREAD_ENABLED=1)
 
-target_include_directories(xml2
+target_include_directories(libxml2
         PUBLIC platform_external_libxml2/include
         PRIVATE platform_external_libxml2)
