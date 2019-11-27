@@ -1,3 +1,0 @@
-[submodule "platform_external_libxml2"]
-	path = platform_external_libxml2
-	url = https://github.com/aosp-mirror/platform_external_libxml2.git
